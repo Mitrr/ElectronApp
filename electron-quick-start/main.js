@@ -1,7 +1,15 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow, Menu} = require('electron');
+const mongoose = require('mongoose');
 require('electron-reload')(__dirname);
 
+mongoose.connect("mongodb://twriter:Ksw23b99GuQDd9w@ds024748.mlab.com:24748/botclients",{
+  useNewUrlParser:true
+},function (err) {
+  if (err){
+    console.log(err);
+  } else console.log('connected to db')
+});
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
@@ -9,6 +17,37 @@ let FAQWindow;
 let authWindow;
 
 let isAuthed = false;
+
+var usersSchema = new mongoose.Schema({
+  login:String,
+  password:String
+});
+
+var User = mongoose.model("Users",usersSchema);
+User.create([{
+  login:"vitaliy",
+  password:"123"
+},
+  {
+    login:"dimas",
+    password:"234"
+  }],function (err,data) {
+  if (err){
+    console.log("problem");
+  } else {
+    console.log(`data added:${data}`);
+  }
+});
+
+const users = [{
+  login:"user1",
+  password:"123"
+  },
+  {
+    login:"user2",
+    password:"234"
+  }
+  ];
 
 function createWindow () {
   // Create the browser window.

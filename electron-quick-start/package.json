@@ -17,6 +17,7 @@
     "electron": "^4.0.4"
   },
   "dependencies": {
-    "electron-reload": "^1.4.0"
+    "electron-reload": "^1.4.0",
+    "mongoose": "^5.4.15"
   }
 }
