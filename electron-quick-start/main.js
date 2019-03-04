@@ -24,7 +24,7 @@ var usersSchema = new mongoose.Schema({
 });
 
 var User = mongoose.model("Users",usersSchema);
-User.create([{
+/*User.create([{
   login:"vitaliy",
   password:"123"
 },
@@ -37,7 +37,7 @@ User.create([{
   } else {
     console.log(`data added:${data}`);
   }
-});
+});*/
 
 const users = [{
   login:"user1",
@@ -52,18 +52,28 @@ const users = [{
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 1100,
+    width: 1000,
     height: 800,
-    backgroundColor:"#27272d",
+    backgroundColor:"#eee",
     webPreferences: {
       nodeIntegration: true
     }
   });
 
   // and load the index.html of the app.
-  if (isAuthed){
+  /*if (isAuthed){
     mainWindow.loadFile('index.html');
-  } else createAuthWindow();
+  } else createAuthWindow();*/
+    mainWindow.loadFile('index.html');
+    mainWindow.webContents.openDevTools();
+
+    /*if (isAuthed){
+      mainWindow.loadFile('index.html');
+    } else {
+      mainWindow.loadFile('login.html');
+      mainWindow.webContents.openDevTools();
+    }*/
+
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
@@ -163,3 +173,4 @@ const mainMenuTemplate = [
   }
 ];
 
+module.exports.isAuth = isAuthed;

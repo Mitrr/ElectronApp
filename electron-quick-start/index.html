@@ -6,13 +6,23 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <h1>ВИТАЛИЙ БЛЭТ Я СДЕЛАЛЬ</h1>
-
-
+    <div class="side_menu_container">
+      <div class="main_side_menu_item"><span>Home page</span></div>
+      <div class="main_side_menu_item"><span>Store ></span>
+        <div class="side_items_menu_wrapper">
+          <div class="sub_menu_item">Просмотр игр</div>
+          <div class="sub_menu_item">Акции</div>
+          <div class="sub_menu_item">Бесплатные игры</div>
+          <div class="sub_menu_item">Acсess</div>
+        </div>
+      </div>
+      <div class="main_side_menu_item"><span>Library</span></div>
+    </div>
 
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
     </script>
+    <script src="handlers.js"></script>
   </body>
 </html>
