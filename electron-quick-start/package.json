@@ -20,6 +20,7 @@
     "defi": "0.0.37",
     "electron-reload": "^1.4.0",
     "mongoose": "^5.4.15",
+    "vue": "^2.6.8",
     "vue-cli": "^2.9.6"
   }
 }

@@ -172,5 +172,3 @@ const mainMenuTemplate = [
     }
   }
 ];
-
-module.exports.isAuth = isAuthed;

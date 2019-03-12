@@ -1,3 +1,6 @@
+const vue = require('vue');
+
+
 const obj = {
     name:'Unknown soldier'
 };
