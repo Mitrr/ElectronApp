@@ -30,6 +30,11 @@ body{
 .side_items_menu_wrapper{
     padding-left: 20%;
     margin-top: 10%;
+    display: none;
+    transition: .4s;
+}
+.active_sub_menu{
+    display: block;
 }
 .sub_menu_item{
     margin-bottom: 10%;

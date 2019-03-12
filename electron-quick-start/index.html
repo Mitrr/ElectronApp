@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>PLAYFORM</title>
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <div class="side_menu_container">
       <div class="main_side_menu_item"><span>Home page</span></div>
-      <div class="main_side_menu_item"><span>Store ></span>
-        <div class="side_items_menu_wrapper">
+      <div id="store" class="main_side_menu_item"><span>Store ></span>
+        <div class="side_items_menu_wrapper" id="store_sub">
           <div class="sub_menu_item">Просмотр игр</div>
           <div class="sub_menu_item">Акции</div>
           <div class="sub_menu_item">Бесплатные игры</div>
@@ -21,8 +21,9 @@
 
     <script>
       // You can also require other files to run in this process
-      require('./renderer.js')
+      require('./renderer.js');
+      window.$ = window.jQuery = require("./jquery.js");
+      require('./handlers');
     </script>
-    <script src="handlers.js"></script>
   </body>
 </html>

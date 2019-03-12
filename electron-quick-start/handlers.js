@@ -1,10 +1,7 @@
 
-let formbtn = document.querySelector('#submit');
+$('#store span').on('click',function (e) {
+    e.preventDefault();
+    $("#store_sub").toggleClass('active_sub_menu');
 
-formbtn.addEventListener('click',function () {
-    console.log("УСё");
-    console.log(require('./main').isAuth);
-    require('./main').isAuth = true;
 });
-
 
