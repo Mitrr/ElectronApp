@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title><%= process.env.npm_package_productName%></title>
+
+    <script>
+        <% if (htmlWebpackPlugin.options.nodeModules) {
+            %>
+        require('module').globalPaths.push('<%= htmlWebpackPlugin.options.nodeModules%>'.replace(/\\/g, '\\\\'),)
+        <% } %>
+        require('source-map-support/source-map-support.js').install()
+    </script>
+
+</head>
+<body>
+<div id="app"></div>
+</body>
+</html>
