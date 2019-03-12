@@ -17,11 +17,23 @@
         </div>
       </div>
       <div class="main_side_menu_item"><span>Library</span></div>
+
+      <div class="account_preview_wrapper">
+        <div class="divider"></div>
+        <div class="avatar"></div>
+        <output class="username">some pidr</output>
+        <div class="auth_btn">
+          Войти/Регистрация
+        </div>
+        <input class="name" placeholder="type msg">
+      </div>
     </div>
 
+    <script src="https://defijs.github.io/defi/defi.js"></script>
     <script>
       // You can also require other files to run in this process
       require('./renderer.js');
+      /*require('./defi');*/
       window.$ = window.jQuery = require("./jquery.js");
       require('./handlers');
     </script>

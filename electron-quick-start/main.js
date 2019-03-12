@@ -52,7 +52,7 @@ const users = [{
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 1000,
+    width: 1300,
     height: 800,
     backgroundColor:"#eee",
     webPreferences: {

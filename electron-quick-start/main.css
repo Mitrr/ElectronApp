@@ -11,21 +11,23 @@ body{
     position: fixed;
     height: 100vh;
     background-color: #27272d;
-    padding-left: 2%;
     padding-top: 3%;
 }
 .main_side_menu_item{
     margin-bottom: 10%;
-    width: fit-content;
-    cursor: pointer
+    cursor: pointer;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    opacity: .8;
 }
 .main_side_menu_item span{
-    opacity: .8;
     font-size: 18px;
 }
-.main_side_menu_item span:hover{
+.main_side_menu_item:hover{
+    background-color: rgb(25, 25, 31);
+    transition: .4s ease-in-out;
     opacity: 1;
-    transition: .4s;
 }
 .side_items_menu_wrapper{
     padding-left: 20%;
@@ -44,6 +46,34 @@ body{
     opacity: 1;
     transition: .4s;
 }
-.sub_menu_item_active{
+.account_preview_wrapper{
+    position: absolute;
+    width: 80%;
+    padding: 10%;
+    bottom: 20%;
+    text-align: center;
+}
+.divider{
+    background-color: #eeeeee;
+    opacity: .3;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 20%;
+}
+.avatar{
+    background-color: #f45a26;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 2%;
+}
+.auth_btn{
+    background-color: #f45a26;
+    width: 100%;
+    border-radius: 3px;
+}
 
+/*test styles*/
+input{
+    color: #27272d;
 }
