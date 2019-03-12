@@ -27,3 +27,7 @@ $('.close').on('click',function () {
    $('.auth_modal').css({"display":"none"}) ;
 });
 
+$('.sub_menu_item').on('click',function () {
+    $('.hover_menu').toggleClass('hover_menu_active');
+});
+
