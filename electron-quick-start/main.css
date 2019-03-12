@@ -14,7 +14,7 @@ body{
     padding-top: 3%;
 }
 .main_side_menu_item{
-    margin-bottom: 10%;
+    margin-bottom: 2%;
     cursor: pointer;
     padding-left: 10%;
     padding-top: 5%;
@@ -52,6 +52,7 @@ body{
     padding: 10%;
     bottom: 20%;
     text-align: center;
+    padding-top: 0;
 }
 .divider{
     background-color: #eeeeee;
@@ -68,11 +69,62 @@ body{
     margin: 0 auto 2%;
 }
 .auth_btn{
-    background-color: #f45a26;
     width: 100%;
     border-radius: 3px;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    cursor: pointer;
+    border: 2px #f45a26 solid ;
+    transition: .4s ease-in-out;
+    opacity: .8;
+    margin-top: 3%;
 }
-
+.auth_btn:hover{
+    background-color: #f45a26;
+    transition: .4s ease-in-out;
+    opacity: 1;
+}
+.auth_modal{
+    position: absolute;
+    top: 29%;
+    left: 26%;
+    padding: 20px;
+    color: rgb(163, 204, 215);
+    background-color: #27272d;
+    border-radius: 2px;
+    width: 450px;
+    height: 350px;
+    display: none;
+    transition: .4s ease-in-out;
+    box-shadow: 0 0 55px 0 rgb(29, 28, 28);
+}
+.close{
+    cursor: pointer;
+}
+.form_wrapper input{
+    width: 80%;
+    display: block;
+    margin: 0 auto 5%;
+    height: 25px;
+    border: none;
+    border-radius: 2px;
+}
+.form_wrapper label{
+    display: block;
+    text-align: center;
+    margin-bottom: 1%;
+}
+#submit{
+    color: #27272d;
+    width: 30%;
+    display: block;
+    right: 13%;
+    position: absolute;
+    border: none;
+    border-radius: 2px;
+    padding: 1%;
+    cursor: pointer;
+}
 /*test styles*/
 input{
     color: #27272d;

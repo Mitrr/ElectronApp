@@ -22,10 +22,26 @@
         <div class="divider"></div>
         <div class="avatar"></div>
         <output class="username">some pidr</output>
-        <div class="auth_btn">
-          Войти/Регистрация
-        </div>
         <input class="name" placeholder="type msg">
+
+        <div class="auth_btn">Войти / Регистрация</div>
+      </div>
+    </div>
+
+    <div class="auth_modal">
+      <span class="close">close</span>
+      <div class="form_wrapper">
+        <form>
+          <div>
+            <label>Enter your login</label>
+            <input type="text" name="login">
+          </div>
+          <div>
+            <label>Enter password</label>
+            <input type="password" name="password">
+          </div>
+          <button id="submit" type="submit">GO</button>
+        </form>
       </div>
     </div>
 
@@ -36,6 +52,7 @@
       /*require('./defi');*/
       window.$ = window.jQuery = require("./jquery.js");
       require('./handlers');
+
     </script>
   </body>
 </html>
